@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------------------*/
+
+h1{
+	color: white;
+	font-size:30px;
+　	font-family: Microsoft JhengHei,DFKai-sb,Arial,verdana; 
+	font-weight:bold;
+
+
+	line-height: 3;  /* 1.5倍行距*/
+	text-align: center; 
+	text-indent: 60px; /*30px*2=60px,縮兩個字*/
+}
+
+h2{
+	font-size:20px;
+　	font-family: Microsoft JhengHei,DFKai-sb,Arial,verdana; 
+	font-weight:bold;
+
+
+	line-height: 2;  /* 1.5倍行距*/
+	text-align: left; 
+}
+
+p:hover{
+	color: red;
+	font-size:16px;
+}
+
+img{
+	border:3px gold solid;
+	border-radius:5px;
+	width:373px;
+	height:598px;
+	background-color:#eee;
+}
+
+.wrap{
+	margin: 0 auto;
+	width: 1200px;
+	background: -webkit-linear-gradient(gray,black);
+	background: -o-linear-gradient(gray,black);
+	background: -moz-linear-gradient(gray,black);
+	background: linear-gradient(gray,black);
+}
+
+.header{
+	width: 1200px;
+	height: 100px;
+	background: black;
+	margin-bottom: 5px;
+} 
+
+.menu{
+	width: 250px;
+	height: 600px;
+	float: left; 
+}
+
+
+.content1{
+	width: 520px;
+	height: 570px;
+	background: -webkit-linear-gradient(gold,black);
+	background: -o-linear-gradient(gold,black);
+	background: -moz-linear-gradient(gold,black);
+	background: linear-gradient(gold,black);
+	float: left;
+	padding: 15px;
+}
+
+.content2{
+	width: 390px;
+	height: 600px;
+/*	background: black;  */
+	float: right;
+	padding-left: 5px;
+}
+
+.clearfix{
+	clear: both;
+}
+/*2.在.menu跟.content後面加上clear來中止float，
+成為.menu跟.content結尾，其他div的開頭基準*/
+
+.footer{
+	width: 1200px;
+	height: 5px;
+	background: black;
+}
+/*1..menu跟.content開始浮動，
+並浮動在父元素上，header後，
+.footer沒有浮動，所以智障跟在hearder後面
+*/
